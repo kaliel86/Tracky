@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body {
+    @include background-image(linear-gradient(top right, #1b1b28, #333341));
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}

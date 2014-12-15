@@ -13,3 +13,18 @@ chrome.storage.sync.get(key, function () {
         }
     });
 });
+
+chrome.app.runtime.onLaunched.addListener(function() {
+  chrome.app.window.create('window.html', {
+    id: 'tracky',
+    innerBounds: {
+        height: 100,
+        width: 100
+    },
+    resizable: false
+  });
+});
+
+chrome.runtime.onSuspend.addListener(function() {
+  // Fermeture fenêtre, nettoyage des tâches
+});
